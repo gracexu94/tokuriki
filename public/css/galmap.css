@@ -1,0 +1,50 @@
+/*
+A custom Bootstrap 3.1 theme from http://bootply.com\
+
+This CSS code should follow the 'bootstrap.css'
+in your HTML file.
+
+license: MIT
+author: bootply.com
+*/
+
+
+html,body{
+  	height:100%;
+}
+
+body{
+  	padding-top:10px; /*padding for navbar*/
+    background: #dfdfdf;
+    color: black;
+}
+
+#main, #main>.row {
+	height:100%;
+}
+
+#main>.row {
+    overflow-y:scroll;
+}
+
+#left {
+	height:100%;
+}
+
+#map-canvas {
+	width:66%;
+    height:calc(100% - 0);
+    position:absolute;
+    right:16px;
+    top:0px;
+    bottom:0;
+    overflow:hidden;
+}
+
+.portfolio-item {
+  cursor: pointer;
+}
+
+/*.navbar-xs { min-height:30px; height: 30px; }
+.navbar-xs .navbar-brand{ padding: 0px 12px;font-size: 16px;line-height: 30px; }
+.navbar-xs .navbar-nav > li > a {  padding-top: 0px; padding-bottom: 0px; line-height: 30px; }*/

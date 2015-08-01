@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<title>Tokuriki App 徳力アップ</title>
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/style1.css" />
+		<style>
+	      html, body, #map-canvas {
+	        margin: 0px;
+	        padding: 0px;
+	        height: 100%;
+	      }
+
+	      #panel {
+	      	display: none;
+	        position: absolute;
+	        top: 5px;
+	        left: 50%;
+	        margin-left: -180px;
+	        z-index: 5;
+	        background-color: #fff;
+	        padding: 5px;
+	        border: 1px solid #999;
+	      }
+	    </style>
+	    <style>
+	      #directions-panel {
+	      	text-align: center;
+	      	display: none;
+	        height: 100%;
+	        float: right;
+	        width: 390px;
+	        overflow: auto;
+	      }
+	    </style>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8bGhAogmXyNBC4UuZw1ku0jwiQit63zY"></script>-->
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?region=JP"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="codrops-top clearfix">
+				<big><a onclick="overlay(8)">KCJS Arts of Japan Web App (Grace Xu, Jared Slawski)</a></big>
+			</div>
+		</div><!-- /container -->
+		<div id="directions-panel" onclick="closePanel()"> <big><strong>WALKING DIRECTIONS</big></strong></br><small>Click anywhere in this panel to exit and refresh the map.</small></div>
+		<div id="map-canvas"></div>
+		<!-- open/close -->
+		<div id="overlay" class="overlay overlay-hugeinc">
+			<button type="button" class="overlay-close" onclick="overlay()">Close</button>
+			<div class="overlay_content">
+				<img class="overlay_pic" src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Koryuji_otera.jpg">
+				<big> Kōryūji 広隆寺 </big>
+				</br>
+				<small> ※ Notes: None in particular! </small>
+				<p> Kōryū-ji (広隆寺) is a Shingon temple in Uzumasa, Ukyō Ward, Kyoto, Japan. The temple is also known by the names Uzumasa-dera (太秦寺) and Kadono-dera (葛野寺), and was formerly known as Hatanokimi-dera (秦公寺), Hachioka-dera (蜂岡寺) and Hōkō-ji (蜂岡寺).</p>
+				<p>Kōryū-ji is said to be the oldest temple in Kyoto, having been constructed in 603 by Hata no Kawakatsu upon receiving a Buddhist statue from Prince Shōtoku. Fires in 818 and 1150 destroyed the entire temple complex, but it was rebuilt several times since.
+				<a target="_blank" href="http://en.wikipedia.org/wiki/Kōryū-ji">Read More>></a> </br></p>
+			</div>
+			<nav>
+				<ul>
+					<li><button type="button" onclick="showDirections(0)">Show Directions</button><li>
+				</ul>
+			</nav>
+		</div>
+		<script src="js/classie.js"></script>
+		<script src="js/demo1wdir.js"></script>
+	</body>
+</html>
