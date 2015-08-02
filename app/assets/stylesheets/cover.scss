@@ -30,7 +30,7 @@ body {
 }
 body {
   text-align: center;
-  background: url(img/introbg.gif) ;
+  background-image: url(image-path('img/introbg.gif'));
   background-color: #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
