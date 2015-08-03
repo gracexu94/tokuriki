@@ -1,2 +1,20 @@
-<h1>Pages#gallery</h1>
-<p>Find me in app/views/pages/gallery.html.erb</p>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Tokuriki Tomikichirō 徳力富吉郎
+                    <small>Scenes of Sacred and Historic Places</small>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <%= render "gallery1" %>
+        <%= render "gallery2" %> 
+        <%= render "gallery3" %>
+        <%= render "gallery4" %>
+        <%= render "gallery5" %>
+    </div>
+    <!-- /.container -->
+    <%= javascript_include_tag "lightbox.js" %> 
+</body>

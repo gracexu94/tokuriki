@@ -1,4 +1,127 @@
-// Place all the styles related to the Pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-@import "cover.scss";
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #20799e;
+}
+
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  text-align: center;
+  background-color: #fff;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.home {
+  background-image: url(image-path('img/introbg.gif'));
+}
+
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.inner {
+  padding: 30px;
+}
+
+.cover-heading {
+  font-size: 70px;
+}
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.mastfoot {
+  color: rgba(0,0,0,.5);
+}
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+}
+
+/* explore */ 
+html,body{
+  height: 100%;
+}
+
+#main, #main>.row {
+  height: 100%;
+}
+
+#main>.row {
+    overflow-y: scroll;
+}
+
+#left {
+  height: 100%;
+}
+
+#map-canvas {
+  width: 66%;
+  height: calc(100% - 0);
+  position: absolute;
+  right: 16px;
+  top: 0px;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.portfolio-item {
+  cursor: pointer;
+}

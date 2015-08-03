@@ -1,2 +1,264 @@
-<h1>Pages#explore</h1>
-<p>Find me in app/views/pages/explore.html.erb</p>
+<head>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8bGhAogmXyNBC4UuZw1ku0jwiQit63zY&sensor=false&callback=initialize"></script>
+</head>
+<div class="col-xs-8" id="map-canvas"></div>
+<div class="container-fluid" id="main">
+  <div class="row">
+    <div class="col-xs-4" id="left">
+      <div class="portfolio-item">
+          <a onclick="snap(0)">
+              <%= image_tag("prints/1.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(1)">
+              <%= image_tag("prints/2.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(2)">
+              <%= image_tag("prints/3.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(3)">
+              <%= image_tag("prints/4.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(4)">
+              <%= image_tag("prints/5.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(5)">
+              <%= image_tag("prints/6.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(6)">
+              <%= image_tag("prints/7.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(7)">
+              <%= image_tag("prints/8.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(8)">
+              <%= image_tag("prints/9.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(9)">
+              <%= image_tag("prints/10.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(10)">
+              <%= image_tag("prints/11.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+
+      <div class="portfolio-item">
+          <a onclick="snap(11)">
+              <%= image_tag("prints/12.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(12)">
+              <%= image_tag("prints/13.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(13)">
+              <%= image_tag("prints/14.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(14)">
+              <%= image_tag("prints/15.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(15)">
+              <%= image_tag("prints/16.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(16)">
+              <%= image_tag("prints/17.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(17)">
+              <%= image_tag("prints/18.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(18)">
+              <%= image_tag("prints/19.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(19)">
+              <%= image_tag("prints/20.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(20)">
+              <%= image_tag("prints/21.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(21)">
+              <%= image_tag("prints/22.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(22)">
+              <%= image_tag("prints/23.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(23)">
+              <%= image_tag("prints/24.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(24)">
+              <%= image_tag("prints/25.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(25)">
+              <%= image_tag("prints/26.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(26)">
+              <%= image_tag("prints/27.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(27)">
+              <%= image_tag("prints/28.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(28)">
+              <%= image_tag("prints/29.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(29)">
+              <%= image_tag("prints/30.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+
+      <div class="portfolio-item">
+          <a onclick="snap(30)">
+              <%= image_tag("prints/31.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+
+      <div class="portfolio-item">
+          <a onclick="snap(31)">
+              <%= image_tag("prints/32.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(32)">
+              <%= image_tag("prints/33.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(33)">
+              <%= image_tag("prints/34.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(34)">
+              <%= image_tag("prints/35.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(35)">
+              <%= image_tag("prints/36.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(36)">
+              <%= image_tag("prints/37.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(37)">
+              <%= image_tag("prints/38.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(38)">
+              <%= image_tag("prints/39.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(39)">
+              <%= image_tag("prints/40.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(40)">
+              <%= image_tag("prints/41.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(41)">
+              <%= image_tag("prints/42.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(42)">
+              <%= image_tag("prints/43.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(43)">
+              <%= image_tag("prints/44.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(44)">
+              <%= image_tag("prints/45.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(45)">
+              <%= image_tag("prints/46.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(46)">
+              <%= image_tag("prints/47.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(47)">
+              <%= image_tag("prints/48.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(48)">
+              <%= image_tag("prints/49.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+      <div class="portfolio-item">
+          <a onclick="snap(49)">
+              <%= image_tag("prints/50.gif", :class => "img-responsive") %>
+          </a>
+      </div>
+    </div>
+  </div>
+</div>
+<%= javascript_include_tag "map.js" %> 
